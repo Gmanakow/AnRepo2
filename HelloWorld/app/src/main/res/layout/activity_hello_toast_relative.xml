@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelloToastActivity">
+
+    <Button
+        android:id="@+id/helloToast_button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:text="@string/HelloToast_toast"
+        android:textColor="@android:color/white"
+
+        android:onClick="showToast"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/helloToast_show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/helloToast_button_toast"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:gravity="center_vertical"
+        android:background="#ffff00"
+        android:text="@string/HelloToast_count_ini"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/helloToast_button_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/helloToast_show_count"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_primary"
+        android:text="@string/HelloToast_count"
+        android:textColor="@android:color/white"
+        android:onClick="countUp"
+        tools:ignore="UsingOnClickInXml" />
+
+
+</RelativeLayout>
